@@ -2,37 +2,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'histoire d'internet</title>
+    <title>Histoire d'Internet</title>
     <style>
         body {
-            background-color: #ADD8E6;
-            font-family: Arial, sans-serif;
-            color: #333;
+            background-color: lavender; /* Violet clair */
+            font-family: 'Times New Roman', serif;
             text-align: center;
+            margin: 50px; /* Grand marge */
         }
-
         h1 {
-            color: #003366;
+            font-size: 2.5em;
+            color: darkviolet;
+            margin-bottom: 20px;
         }
-
-        img {
-            width: 300px; 
-            height: auto;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-
         p {
-            font-size: 18px;
-            margin-top: 20px;
+            font-size: 1.3em;
+            color: darkviolet;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .bottom-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .image {
+            width: 40%;
+            align-self: flex-start;
+        }
+        .video {
+            width: 55%;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>L'histoire d'internet</h1>
-    <img src="https://via.placeholder.com/300" alt="Imagen de ejemplo">
-    <p>L’internet a été créé en 1969, il y a eu beaucoup d' événements qui ont été très importants pour l’évolution de celle-ci. Maintenant en 2025, on utilise Internet tous les jours tout le temps. 
-L'internet qu’on utilise tous les jours a été créé récemment, mais quelle est l’histoire? Les débuts de l’internet ont été dans les années 1960. 
-</p>
+    <div class="content">
+        <h1>L’histoire de l’Internet</h1>
+        <p>
+            L’internet a été créé en 1969, il y a eu beaucoup d'événements qui ont été très importants pour l’évolution de celle-ci. Maintenant en 2025, on utilise Internet tous les jours tout le temps. L’internet qu’on utilise tous les jours a été créé récemment, mais quelle est l’histoire ? Les débuts de l’internet ont été dans les années 1960.
+        </p>
+        <div class="bottom-content">
+            <div class="image">
+                <img src="https://via.placeholder.com/300x200.png?text=Image+de+l'Internet" alt="Histoire de l'Internet">
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
