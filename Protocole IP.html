@@ -8,6 +8,7 @@
             background-color: lightblue;
             font-family: Times New Roman, sans-serif;
             text-align: center;
+            padding-bottom: 200px; 
         }
         .content {
             margin: 20px;
@@ -15,22 +16,48 @@
         img, video {
             max-width: 100%;
             height: auto;
-            margin: 200px;
+            margin: 20px;
+        }
+        .bottom-content {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .message {
+            font-size: 20px;
+            color: darkblue;
+            display: none;
         }
     </style>
+    <script>
+        function showMessage() {
+            var message = document.getElementById('video-message');
+            message.style.display = 'block'; 
+        }
+    </script>
 </head>
 <body>
     <div class="content">
         <h1>Que c’est le protocole IP?</h1>
         <p>Le protocole IP est un des principaux moyens qui permettent la communication dans les réseaux informatiques. Il est responsable de l'adressage, du routage et du transport des paquets de données d'une source à une destination.
-L’adressage est l'identification unique qui reçoit chaque appareil. Le routage est un point de la transmission, c’est comme le l’information est guidé par des réseaux intermédiaires et comme cela accomplir la transmission de données. Le transport a aussi besoin d’une fragmentation pour que les données soient découpées en petits morceaux. 
-Quelques caractéristiques du protocole c’est qu’il n’est pas fiable car il ne garantit pas la livraison des paquets, leur ordre, ni leur intégrité a difference des protocoles comme TCP complètent ces fonctions.
-</p>
+        L’adressage est l'identification unique qui reçoit chaque appareil. Le routage est un point de la transmission, c’est comme l’information est guidée par des réseaux intermédiaires et comment cela accomplit la transmission des données. Le transport nécessite aussi une fragmentation pour que les données soient découpées en petits morceaux.
+        Quelques caractéristiques du protocole IP sont qu’il n’est pas fiable, car il ne garantit pas la livraison des paquets, leur ordre, ni leur intégrité, contrairement à des protocoles comme TCP qui complètent ces fonctions.
+        </p>
+    </div>
+    
+    <div class="bottom-content">
+        <!-- Message caché au départ -->
+        <p id="video-message" class="message">Voici une explication de cela.</p>
         
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cloudflare.com%2Fes-es%2Flearning%2Fnetwork-layer%2Finternet-protocol%2F&psig=AOvVaw3aEzwSodmcjEx5RkreeRo_&ust=1738349029505000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLDx3caLnosDFQAAAAAdAAAAABAE"alt="Image protocole IP">
+        <!-- Remplacer l'URL de l'image avec une URL correcte -->
+        <img src="https://example.com/path_to_image.jpg" alt="Image protocole IP">
         
-        <video controls>
-            <source src="video.mp4" type="video/mp4">
+        <!-- Vidéo avec l'événement de clic -->
+        <video controls onclick="showMessage()">
+            <source src="chemin_vers_video/video.mp4" type="video/mp4">
         </video>
     </div>
 </body>
