@@ -1,0 +1,72 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocole TCP</title>
+    <style>
+        body {
+            background-color: lavender; /* Violet clair */
+            font-family: 'Times New Roman', serif;
+            text-align: center;
+            margin: 50px; /* Grand marge */
+        }
+        h1 {
+            font-size: 2.5em;
+            color: darkviolet;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.3em;
+            color: darkviolet;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .bottom-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .image {
+            width: 40%;
+            align-self: flex-start;
+        }
+        .video {
+            width: 55%;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Protocole TCP</h1>
+        <p>
+            Le protocole TCP (Transmission Control Protocol) est un protocole de communication essentiel du modèle TCP/IP, garantissant une transmission fiable et ordonnée des données entre deux systèmes sur un réseau. Fonctionnant en mode connecté, TCP établit une liaison avant d'envoyer des informations grâce à un handshake en trois étapes (SYN, SYN-ACK, ACK).
+            Une fois la connexion établie, les données sont segmentées, numérotées et envoyées avec un accusé de réception (ACK) pour assurer leur bonne réception. En cas de perte ou d'erreur, TCP retransmet les segments concernés. Il intègre également des mécanismes de contrôle de flux et de contrôle de congestion pour éviter la surcharge du réseau et adapter la transmission au rythme du récepteur.
+            Lorsque la communication est terminée, TCP ferme proprement la connexion via un processus en plusieurs étapes. Grâce à sa fiabilité, TCP est utilisé pour des applications nécessitant une transmission précise des données, comme la navigation web (HTTP/HTTPS), les e-mails (SMTP, IMAP) et le transfert de fichiers (FTP).
+        </p>
+        <div class="bottom-content">
+            <div class="image">
+                <img src="https://via.placeholder.com/300x200.png?text=Image+TCP" alt="Protocole TCP">
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la vidéo.
+                </video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
