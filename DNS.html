@@ -2,33 +2,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNS</title>
+    <title>Le DNS</title>
     <style>
         body {
-            background-color: lightblue;
-            font-family: Arial, sans-serif;
+            background-color: lavender; /* Violet clair */
+            font-family: 'Times New Roman', serif;
             text-align: center;
+            margin: 50px; /* Grand marge */
+        }
+        h1 {
+            font-size: 2.5em;
+            color: darkviolet;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.3em;
+            color: darkviolet;
+            line-height: 1.6;
+            margin-bottom: 40px;
         }
         .content {
-            margin: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
-        img, video {
-            max-width: 100%;
+        .bottom-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .image {
+            width: 40%;
+            align-self: flex-start;
+        }
+        .video {
+            width: 55%;
+        }
+        img {
+            width: 100%;
             height: auto;
-            margin: 20px;
+            border-radius: 10px;
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
     <div class="content">
-        <h1>Domain Name System</h1>
-        <p>Le DNS (Domain Name System) peut être expliqué comme le système essentiel d'Internet qui est utilisé comme traducteur qui change les noms de domaine lisibles par les humains en adresses IP utilisées par les ordinateurs pour communiquer. C’est donc le moyen de convertir le langage habituel en langage numérique. </p> 
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.indusface.com%2Flearning%2Fwhat-is-dns%2F&psig=AOvVaw3XhqF9TqxZn35OtjDcW7YM&ust=1738349603834000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDa1tiNnosDFQAAAAAdAAAAABAT" alt="Image DNS"
-        <video controls>
-            <source src="video.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la lecture des vidéos.
-        </video>
+        <h1>Le Protocole IP</h1>
+        <p>
+            Le protocole IP est un des principaux moyens qui permettent la communication dans les réseaux informatiques. Il est responsable de l'adressage, du routage et du transport des paquets de données d'une source à une destination.
+            L’adressage est l'identification unique qui reçoit chaque appareil. Le routage est un point de la transmission, c’est comme l’information est guidée par des réseaux intermédiaires et comme cela accomplit la transmission de données. Le transport a aussi besoin d’une fragmentation pour que les données soient découpées en petits morceaux.
+            Quelques caractéristiques du protocole, c’est qu’il n’est pas fiable car il ne garantit pas la livraison des paquets, leur ordre, ni leur intégrité, à la différence des protocoles comme TCP qui complètent ces fonctions.
+        </p>
+        <div class="bottom-content">
+            <div class="image">
+                <img src="http://www.frisechronos.fr/H5PdfFiles/d8fbfe06-f2e7-48b2-99be-c1fe12840012.png" alt="Protocole IP">
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
     </div>
 </body>
 </html>
+
 
