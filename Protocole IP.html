@@ -2,63 +2,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protocole IP</title>
+    <title>Le Protocole IP</title>
     <style>
         body {
-            background-color: lightblue;
-            font-family: Times New Roman, sans-serif;
+            background-color: lavender; /* Violet clair */
+            font-family: 'Times New Roman', serif;
             text-align: center;
-            padding-bottom: 200px; 
+            margin: 50px; /* Grand marge */
+        }
+        h1 {
+            font-size: 2.5em;
+            color: darkviolet;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.3em;
+            color: darkviolet;
+            line-height: 1.6;
+            margin-bottom: 40px;
         }
         .content {
-            margin: 20px;
-        }
-        img, video {
-            max-width: 100%;
-            height: auto;
-            margin: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
         .bottom-content {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #f0f0f0;
-            text-align: center;
-            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
         }
-        .message {
-            font-size: 20px;
-            color: darkblue;
-            display: none;
+        .image {
+            width: 40%;
+            align-self: flex-start;
+        }
+        .video {
+            width: 55%;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
         }
     </style>
-    <script>
-        function showMessage() {
-            var message = document.getElementById('video-message');
-            message.style.display = 'block'; 
-        }
-    </script>
 </head>
 <body>
     <div class="content">
-        <h1>Que c’est le protocole IP?</h1>
-        <p>Le protocole IP est un des principaux moyens qui permettent la communication dans les réseaux informatiques. Il est responsable de l'adressage, du routage et du transport des paquets de données d'une source à une destination.
-        L’adressage est l'identification unique qui reçoit chaque appareil. Le routage est un point de la transmission, c’est comme l’information est guidée par des réseaux intermédiaires et comment cela accomplit la transmission des données. Le transport nécessite aussi une fragmentation pour que les données soient découpées en petits morceaux.
-        Quelques caractéristiques du protocole IP sont qu’il n’est pas fiable, car il ne garantit pas la livraison des paquets, leur ordre, ni leur intégrité, contrairement à des protocoles comme TCP qui complètent ces fonctions.
+        <h1>Le Protocole IP</h1>
+        <p>
+            Le protocole IP est un des principaux moyens qui permettent la communication dans les réseaux informatiques. Il est responsable de l'adressage, du routage et du transport des paquets de données d'une source à une destination.
+            L’adressage est l'identification unique qui reçoit chaque appareil. Le routage est un point de la transmission, c’est comme l’information est guidée par des réseaux intermédiaires et comme cela accomplit la transmission de données. Le transport a aussi besoin d’une fragmentation pour que les données soient découpées en petits morceaux.
+            Quelques caractéristiques du protocole, c’est qu’il n’est pas fiable car il ne garantit pas la livraison des paquets, leur ordre, ni leur intégrité, à la différence des protocoles comme TCP qui complètent ces fonctions.
         </p>
-    </div>
-    
-    <div class="bottom-content">
-        <!-- Message caché au départ -->
-        <p id="video-message" class="message">Voici une explication de cela.</p>
-        
-        <!-- Remplacer l'URL de l'image avec une URL correcte -->
-        <img src="https://example.com/path_to_image.jpg" alt="Image protocole IP">
-        
-        <!-- Vidéo avec l'événement de clic -->
-        <video controls onclick="showMessage()">
-            <source src="chemin_vers_video/video.mp4" type="video/mp4">
-        </video>
+        <div class="bottom-content">
+            <div class="image">
+                <img src="http://www.frisechronos.fr/H5PdfFiles/d8fbfe06-f2e7-48b2-99be-c1fe12840012.png" alt="Protocole IP">
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
     </div>
 </body>
 </html>
