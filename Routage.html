@@ -1,1 +1,80 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Routage</title>
+    <style>
+        body {
+            background-color: lavender; /* Violet clair */
+            font-family: 'Times New Roman', serif;
+            text-align: center;
+            margin: 50px; /* Grand marge */
+        }
+        h1 {
+            font-size: 2.5em;
+            color: darkviolet;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.3em;
+            color: darkviolet;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .bottom-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .image {
+            width: 40%;
+            align-self: flex-start;
+        }
+        .video {
+            width: 55%;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Le Routage</h1>
+        <p>
+            Le routage est le processus qui gère le trafic de données dans un réseau, garantissant que les paquets d’information arrivent de leur origine à leur destination de manière efficace. Ce processus est effectué par les routeurs (dispositifs intermédiaires) qui déterminent le meilleur chemin pour chaque paquet, en utilisant des protocoles de routage tels que OSPF, BGP et RIP.
+            <br><br>
+            Types de transmission de données :
+            <ul>
+                <li><strong>Unicast</strong> : envoi de données à un seul destinataire.</li>
+                <li><strong>Broadcast</strong> : diffusion de données à tous les appareils du réseau.</li>
+                <li><strong>Multicast</strong> : envoi de données à un groupe spécifique d’appareils intéressés.</li>
+                <li><strong>Anycast</strong> : envoi de données au membre le plus proche d’un groupe de destinations possibles.</li>
+            </ul>
+            <br>
+            Le routage est essentiel pour assurer une circulation efficace des données, optimisant leur acheminement à travers des chemins appropriés et répondant aux différents besoins de communication au sein du réseau.
+        </p>
+        <div class="bottom-content">
+            <div class="image">
+                <img src="http://www.frisechronos.fr/H5PdfFiles/d8fbfe06-f2e7-48b2-99be-c1fe12840012.png" alt="Le Routage">
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 
